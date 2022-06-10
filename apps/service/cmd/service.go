@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello")
+	fmt.Println(envString("SERVICE_MESSAGE", "Hello (default)"))
 }
 
 func envString(env, fallback string) string {

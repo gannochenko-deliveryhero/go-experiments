@@ -19,3 +19,6 @@ migrate_database: ## Migrate the database
 
 run: ## Run the application locally on host machine
 	@godotenv -f $(ROOT_DIR)/../../.env.local go run $(ROOT_DIR)/cmd/service.go
+
+run_live:
+	@godotenv -f $(ROOT_DIR)/../../.env.local air
