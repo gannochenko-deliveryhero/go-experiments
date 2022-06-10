@@ -3,9 +3,6 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "setup": "./script/setup.sh",
-        "seed": "./script/seed.sh",
-        "infra": "docker-compose up",
         "feat": "fea create"
     },
     "keywords": [],
