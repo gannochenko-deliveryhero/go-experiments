@@ -19,7 +19,7 @@ migrate_databases: ## Migrate databases of all applications
 run_infra: ## Run the infrastructure locally
 	@docker-compose -f docker-compose.yml up -d
 
-run:
+run: ## Run an application
 ifeq ($(app),)
 	$(error Please specify the "app" parameter. Example: "make run app=service")
 else

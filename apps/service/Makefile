@@ -9,8 +9,9 @@ help:
 # ---------------------------------
 
 install:
+	@go install github.com/joho/godotenv/cmd/godotenv@latest
+	@go install github.com/cosmtrek/air@latest
 	@go mod download
-	@go install github.com/joho/godotenv/cmd/godotenv
 
 create_resources: ## Create the local resources, such as data tables, buckets, etc.
 
