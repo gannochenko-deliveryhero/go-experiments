@@ -13,11 +13,11 @@ install:
 	@go install github.com/cosmtrek/air@latest
 	@go mod download
 
-create_resources: ## Create the local resources, such as data tables, buckets, etc.
+create_resources: ## Create local resources, such as data tables, buckets, etc.
 
 migrate_database: ## Migrate the database
 
-run: ## Run the application locally on host machine
+run: ## Run the application locally on the host machine
 	@godotenv -f $(ROOT_DIR)/../../.env.local go run $(ROOT_DIR)/cmd/service.go
 
 run_live:
