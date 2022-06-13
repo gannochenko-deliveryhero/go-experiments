@@ -11,6 +11,9 @@ help:
 install:
 	@go install github.com/joho/godotenv/cmd/godotenv@latest
 	@go install github.com/cosmtrek/air@latest
+	@brew install golang-migrate
+	@brew install postgresql
+	@brew install kyoh86/tap/richgo
 	@go mod download
 
 create_resources: ## Create local resources, such as data tables, buckets, etc.

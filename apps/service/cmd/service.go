@@ -1,9 +1,9 @@
-package service
+package main
 
 import (
 	"fmt"
 )
 
 func main() {
-	fmt.Println(envString("SERVICE_MESSAGE", "Hello (default)"))
+	fmt.Println(getEnv("SERVICE_MESSAGE", "Hello (default)"))
 }
