@@ -8,6 +8,7 @@ help:
 
 install: ## Install external dependencies and resources.
 	@yarn
+	@pip3 install mkdocs
 	@make -f ./apps/service/Makefile install
 
 create_resources: ## Create the local resources, such as data tables, buckets, etc.

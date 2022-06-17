@@ -23,4 +23,4 @@ FROM alpine:3.15.0 as base
 COPY --from=builder /build/app /service
 
 EXPOSE 8081 9998
-ENTRYPOINT [ "/service" ]
+ENTRYPOINT [ "/main" ]
