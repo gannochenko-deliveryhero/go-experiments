@@ -1,6 +1,10 @@
 package main
 
-func main() {
-	//fmt.Println(util.getEnv("SERVICE_MESSAGE", "Hello (default)"))
+import (
+	"fmt"
+	"service/internal/util"
+)
 
+func main() {
+	fmt.Println(util.GetEnv("SERVICE_MESSAGE", "Hello (default)"))
 }
